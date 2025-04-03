@@ -1,10 +1,16 @@
 //primeiro hello world
 
-var valor=20.13465456
+let valor=20.13465456
 
-var text= 'primeiro projeto javascript'
+let text= 'primeiro projeto javascript'
 
-var ativo= true
+let ativo= true
+
+let estados= ["SP","MG","RO","Acre"];
+
+let marcasCarros= [];
+
+marcasCarros.push("Toyota")
 
 console.log (valor.toFixed(2));//arredonda o valor para duas casas decimais
 
@@ -17,3 +23,11 @@ console.log("tipo " + typeof text);//typeof exibe o tipo da variavel
 console.log("tipo " + typeof ativo);//typeof exibe o tipo da variavel
 
 console.log("tipo " + typeof valor);//typeof exibe o tipo da variavel
+
+console.log (estados[2]);
+
+console.log("Tamanho: " + estados.length);
+
+console.log(marcasCarros[0]);
+
+console.log("Total letras: " + marcasCarros[0].length);
