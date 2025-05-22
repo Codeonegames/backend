@@ -1,2 +1,2 @@
 //for in para objetos
-//for of para propriedade
+//for of para propriedades
