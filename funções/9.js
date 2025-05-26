@@ -17,17 +17,22 @@ function validarSenha(senha) {
 }
 
 function validarSenhaUsuario() {
-  const senha = rl.question("Digite a senha: ");
-  const isValid = validarSenha(senha);
+  let senhaValida = false;
 
-  if (isValid) {
-    console.log("Senha válida!");
-  } else {
-    console.log("Senha inválida. A senha deve atender aos seguintes critérios:");
-    console.log("- Mínimo 8 caracteres");
-    console.log("- Pelo menos uma letra maiúscula");
-    console.log("- Pelo menos uma letra minúscula");
-    console.log("- Pelo menos um caractere especial");
+  while (!senhaValida) {
+    const senha = rl.question("Digite a senha: ");
+    const isValid = validarSenha(senha);
+
+    if (isValid) {
+      console.log("Senha válida!");
+      senhaValida = true; // Sai do loop se a senha for válida
+    } else {
+      console.log("Senha inválida. A senha deve atender aos seguintes critérios:");
+      console.log("- Mínimo 8 caracteres");
+      console.log("- Pelo menos uma letra maiúscula");
+      console.log("- Pelo menos uma letra minúscula");
+      console.log("- Pelo menos um caractere especial");
+    }
   }
 }
 

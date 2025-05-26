@@ -13,3 +13,6 @@ function calcularDescontoProduto() {
   const valorFinal = calcularValorComDesconto(valorOriginal, percentualDesconto);
   console.log("O valor final do produto com desconto é: " + valorFinal.toFixed(2)); // toFixed(2) formata para duas casas decimais
 }
+
+// Chamando a função para calcular o desconto:
+calcularDescontoProduto();
