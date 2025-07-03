@@ -1,2 +1,12 @@
 //for in para objetos
-//for of para array
+//for of para array'    
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
+app.listen(8080, () => {
+    let data = new Date();
+    console.log ("Servidor node iniciado em: " + data)});
